@@ -1,0 +1,406 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <!-- Title -->
+    <title>We're Getting Married!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Wedding website for Taylor and Jake">
+    <meta name="keywords" content="">
+    <meta name="author" content="Jacob Holland">
+
+    <!-- Stylesheets -->
+    <link href="Content/bootstrap.css" rel="stylesheet">
+    <link href="Content/font-awesome.css" rel="stylesheet">
+    <link href="Content/flexslider.css" rel="stylesheet">
+    <link href="Content/bootstrapValidator.min.css" rel="stylesheet">
+    <link href="Content/style.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon/favicon.png">
+</head>
+
+<body>
+    <a name="home" id="home"></a>
+    <!-- Bootstrap navbar -->
+    <div class="navbar navbar-default navbar-fixed-top bs-docs-nav" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav">
+                    <!-- Navigation links -->
+                    <li><a href="#home" class="anchorLink">Home</a></li>
+                    <li><a href="#about" class="anchorLink">About</a></li>
+                    <li><a href="#photos" class="anchorLink">Photos</a></li>
+                    <li><a href="#wedding" class="anchorLink">Wedding</a></li>
+                    <li><a href="#gifts" class="anchorLink">Gifts</a></li>
+                    <li><a href="#rsvp" class="anchorLink">RSVP</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <img src="/img/header.jpg" style="max-width: 100%;
+  max-height: 100%;"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <a name="about" id="about"></a>
+
+
+    <!-- About Us -->
+    <div class="aboutus">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Title -->
+                    <div class="head">
+                        <h2>About Us</h2>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="well center">
+                        <div class="head">
+                            <!-- Our love story -->
+                            <h3>Our Story</h3>
+                            <div class="ring-bor"></div>
+                            <p>
+                                Taylor and Jake had their first date on Valentine's Day in 2010. They had known each other for years, growing up in the same town, going to the same schools, but until high school they never really connected. They met during a mutual class our junior year in high school and from there their love blossomed. They got engaged New Year’s Eve, 2013 at Chestnut Mountain Resort in Galena, IL. Jake planned a snowboarding trip for New Year’s Eve. He popped the question on the slopes as the sun went down, and of course, Taylor said yes! They celebrated later that night with their families and watched a wonderful fireworks display.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about">
+                        <!-- Groom details with photo -->
+                        <h3>Jake <span class="ameta">- Groom</span></h3>
+                        <p>
+                            <img src="img/photos/boy.jpg" alt="" class="img-responsive" />
+                            Jake is graduating from the University of Illinois with a degree in Technical Systems Management in the Spring of 2015. He will be pursuing a career in the IT field or the protyping field.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about">
+                        <!-- bride details with photo -->
+                        <h3>Taylor <span class="ameta">- Bride</span></h3>
+                        <p>
+                            <img src="img/photos/girl.jpg" alt="" class="img-responsive" />
+                            Taylor is graduating from the University of Illinois with a degree in Kinesiology in the Winter of 2014. She is following her dream of becoming a doctor and currently applying to medical school.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="border"></div>
+    <a name="photos" id="photos"></a>
+    <hr />
+    <div class="itop"><a href="#home" class="anchorLink"><i class="fa fa-chevron-up"></i></a></div>
+    <div class="border"></div>
+
+
+    <!-- Photos -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="head">
+                    <h2>Gallery</h2>
+                    <div class="bor"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <!-- Flex slider -->
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="img/photos/_MG_2762.jpg" alt="" class="img-responsive" />
+                        </li>
+                        <li>
+                            <img src="img/photos/_MG_2855.jpg" alt="" class="img-responsive" />
+                        </li>
+                        <li>
+                            <img src="img/photos/_MG_2911.jpg" alt="" class="img-responsive" />
+                        </li>
+                        <li>
+                            <img src="img/photos/_MG_3089.jpg" alt="" class="img-responsive" />
+                        </li>
+                        <li>
+                            <img src="img/photos/_MG_3140.jpg" alt="" class="img-responsive" />
+                        </li>
+                        <li>
+                            <img src="img/photos/_MG_3342.jpg" alt="" class="img-responsive" />
+                        </li>
+                        <li>
+                            <img src="img/photos/_MG_3389.jpg" alt="" class="img-responsive" />
+                        </li>
+                        <li>
+                            <img src="img/photos/_MG_3485.jpg" alt="" class="img-responsive" />
+                        </li>
+                        <li>
+                            <img src="img/photos/_MG_3542.jpg" alt="" class="img-responsive" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="border"></div>
+    <a name="wedding" id="wedding"></a>
+    <hr />
+    <div class="itop"><a href="#home" class="anchorLink"><i class="fa fa-chevron-up"></i></a></div>
+    <div class="border"></div>
+
+
+    <!-- Wedding -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="head">
+                    <h2>The Wedding</h2>
+                    <div class="bor"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row equal">
+            <div class="col-sm-4">
+                <div class="wedding">
+                    <!-- Ceremony -->
+                    <h4><i class="fa fa-heart"></i>Ceremony</h4>
+                    <div style="text-align: center;">
+                        <a href="http://www.ahundredacresorchard.com/Cider-Mill">
+                            <img src="img/ciderlogo.jpg" />
+                        </a>
+                    </div>
+
+                    <a href="http://www.ahundredacresorchard.com/Cider-Mill">The Cider Mill at A Hundred Acres Orchard</a><br />
+                    <a href="http://maps.google.com/maps?q=Hundred Acre Orchard Princeton, IL">14180 1800 E St<br />
+                        Princeton, IL 61356<br />
+                    </a>
+                    <a href="tel:+8159158145">(815) 915-8145</a><br />
+                    <hr />
+
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="wedding">
+                    <!-- Wedding details -->
+                    <h4><i class="fa fa-glass"></i>Wedding Party</h4>
+                    <h5><strong>Ring Bearer:</strong></h5>
+                    <p style="text-align: center">Braiden Stone</p>
+                    <h5><strong>Flower Girl:</strong></h5>
+                    <p style="text-align: center">Ava Stone</p>
+                    <h5><strong>Bridesmaids:</strong></h5>
+                    <p style="text-align: center">Katie Millard, Nichole Cattron, Heather Lauf, Nicole Holland, Danielle Rossi</p>
+                    <br />
+                    <h5><strong>Groomsmen:</strong></h5>
+                    <p style="text-align: center">Matt Holland, Scott Hult, Adam Fredenhagen, Jonothan Lauf</p>
+                </div>
+                <br />
+            </div>
+            <div class="col-sm-4">
+                <div class="wedding">
+                    <!-- Travel and Accomodation -->
+                    <h4><i class="fa fa-home"></i>Accommodations</h4>
+                    <a href="http://www.americinn.com/Hotels/IL/Princeton" target="_blank">AmericInn Lodge & Suites</a><br />
+                    2120 Claude Bailey Pkwy<br />
+                    Princeton, IL 61356<br />
+                    (815) 872-5000<br />
+                    <a href="http://maps.google.com/maps?q=Americinn Princeton,IL" target="_blank">Get Directions</a>
+                    <hr />
+                    <h4><i class="fa fa-truck"></i>Travel</h4>
+                    <iframe width="250" height="175" frameborder="" scrolling="yes" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?ie=UTF8&amp;q=A+Hundred+Acres+Orchard+%26+Market&amp;fb=1&amp;gl=us&amp;hq=&amp;cid=18303213485354616367&amp;hnear=&amp;ll=41.35339,-89.509974&amp;spn=0.006295,0.006295&amp;t=h&amp;output=embed"></iframe>
+                    <br />
+                    <a href="https://maps.google.com/maps?hl=en-US&ll=41.35339,-89.509974&spn=0.028639,0.066047&t=h&gl=US&mapclient=embed&z=15&iwloc=lyrftr:m,18303213485354616367,," target="_blank">Get Directions</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="border"></div>
+    <a name="gifts" id="gifts"></a>
+    <hr />
+    <div class="itop"><a href="#home" class="anchorLink"><i class="fa fa-chevron-up"></i></a></div>
+    <div class="border"></div>
+
+
+    <!-- Gifts -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="head">
+
+                    <h2>Gifts</h2>
+                    <div class="bor"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="well">
+                    <p>
+                        Dear Friends and Family,<br />
+                        We have registred at Bed Bath & Beyond and Target. 
+                    </p>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=10852861&pwsurl=" target="_blank">
+                                <img class="img-responsive" src="/img/bedbathandbeyond_logo.jpg" /></a>
+                        </div>
+
+                        <div class="col-md-6">
+                            <a href="https://www-secure.target.com/gift-registry/registry/DY0RnCbTnpVY84hcOZABMA" target="_blank">
+                                <img class="img-responsive" src="img/target_logo.jpg" /></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="border"></div>
+    <hr />
+    <div class="itop"><a href="#home" class="anchorLink"><i class="fa fa-chevron-up"></i></a></div>
+    <a name="rsvp" id="rsvp"></a>
+    <div class="border"></div>
+        
+    <!-- RSVP -->
+    <div class="container">      
+        <div class="row">   
+            <div class="col-md-12">
+                <div class="head">  
+                    <h2>RSVP</h2>
+                    <div class="bor"></div>
+                </div>
+            </div>
+            
+            <div class="col-md-12" id="rsvpColumn">
+                <div class="well">
+                    <!-- Contact details -->
+                    <h3>Please fill out the below form</h3>
+                    <p>Please be accurate. You can include an email to receive wedding updates and a confirmation that you have RSVP'd from us if you wish! </p>
+                    <p>If you have any questions, let me know <a href="mailto:jtholla2@illinois.edu">jtholla2@illinois.edu</a></p>
+
+                    <form class="form" id="rsvpForm" method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name">Your Name:</label>
+                                    <input class="form-control input-sm" type="text" placeholder="Name" id="name" name="name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="guestNames">Name of Guest(s):</label>
+                                    <input class="form-control input-sm" type="text" placeholder="Name of Guest(s)" id="guestNames" name="guestNames">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="numberAttending">Total Number Attending:</label>
+                                    <%--<input class="form-control input-sm" type="number" step="1" id="numberAttending" name="numberAttending">--%>
+                                    <select class="form-control" id="numberAttending" name="numberAttending">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input class="form-control input-sm" type="email" placeholder="Email (optional)" id="email" name="email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="song">Suggest a Song:</label>
+                                    <input class="form-control input-sm" type="text" id="song" name="song" placeholder="Song (optional)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="comments">Comments:</label>
+                                    <textarea class="form-control" id="comments" rows="3" name="comments" placeholder="Comments (optional)" style="resize: vertical;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <%--<div class="col-md-8 error">Please make sure to include your name and the number of people attending.</div>--%>
+                            <div class="col-md-12">
+                                <div class="form-group pull-right">
+                                    <span id="submitResponse" hidden="hidden">Thank you for your response!</span>
+                                    <button type="submit" class="btn btn-success">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Copyright &copy; <a href="#">Jacob Holland</a></p>
+                    <div class="border"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="//www.parsecdn.com/js/parse-1.2.19.min.js"></script>
+    <script src="Scripts/jquery-2.1.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/jquery.flexslider.js"></script>
+    <script src="Scripts/jquery.anchor.js"></script>
+    <script src="Scripts/bootstrapValidator.min.js"></script>
+    <script src="Scripts/blur.min.js"></script>
+    <script src="Scripts/custom.js"></script>
+</body>
+</html>
