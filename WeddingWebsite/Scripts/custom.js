@@ -1,24 +1,8 @@
-
 Parse.initialize("OC2yZnNrNbBtInQvOyf8dskWuoUliy0SHfjkWBop", "lrSV9WVgeaLbi9yVgm52IU4y8GOo0k3MDhHTJZ9j");
+var url = "https://api.mailgun.net/v2/jakeandtaylor.com/lists/wedding@jakeandtaylor.com/members";
+var APIKey = "key-6690ae2049949a9b02539f5ab8e96a2a";
 
 function addToMailingList(email, name) {
-    var url = "https://api.mailgun.net/v2/jakeandtaylor.com/lists/wedding@jakeandtaylor.com/members";
-    var APIKey = "key-6690ae2049949a9b02539f5ab8e96a2a";
-    //var xmlhttp = null;
-    //if (window.XMLHttpRequest) {
-    //    xmlhttp = new XMLHttpRequest();
-    //    if (typeof xmlhttp.overrideMimeType != 'undefined') {
-    //        xmlhttp.overrideMimeType('text/xml');
-    //    }
-    //} else if (window.ActiveXObject) {
-    //    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-    //} else {
-    //    alert('Perhaps your browser does not support xmlhttprequests?');
-    //}
-    //xmlhttp.open('POST', url, true);
-    //xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    //xmlhttp.send("address=" + email + "&name=" + name);
-     
     $.ajax({
         type: "POST",
         url: url,
@@ -39,11 +23,12 @@ function addToMailingList(email, name) {
         },
     });
 }
+
 function rsvpEmail(formObj) {
     Parse.Cloud.run('rsvpEmail', formObj, {
         success: function (result) {
             //console.log(result);
-           
+
             //addToMailingList(formObj.email, formObj.name);
 
         },
@@ -54,18 +39,8 @@ function rsvpEmail(formObj) {
 };
 
 
-$(window).load(function () {
-
-    
-    if (window.XMLHttpRequest) xmlhttp = new XMLHttpRequest();
-    else xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-
-    xmlhttp.open("GET", "http://api.hostip.info/get_json.php", false);
-    xmlhttp.send();
-
-    var hostipInfo = JSON.parse(xmlhttp.responseText);
-    //console.log(hostipInfo);
-    Parse.Analytics.track('visited', hostipInfo);
+$(document).ready(function () {
+    //Parse.Analytics.track('visited', "111.111.111.111");
 
     $('.flexslider').flexslider({
         animation: "slide",

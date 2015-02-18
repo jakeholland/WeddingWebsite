@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+﻿﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -168,7 +168,6 @@
         </div>
     </div>
 
-
     <div class="border"></div>
     <a name="wedding" id="wedding"></a>
     <hr />
@@ -201,9 +200,7 @@
                     <a href="http://maps.google.com/maps?q=Hundred Acre Orchard Princeton, IL">14180 1800 E St<br />
                         Princeton, IL 61356<br />
                     </a>
-                    <a href="tel:+8159158145">(815) 915-8145</a><br />
-                    <hr />
-
+                    <a href="tel:+8159158145">(815) 915-8145</a>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -218,7 +215,7 @@
                     <p style="text-align: center">Katie Millard, Nichole Cattron, Heather Lauf, Nicole Holland, Danielle Rossi</p>
                     <br />
                     <h5><strong>Groomsmen:</strong></h5>
-                    <p style="text-align: center">Matt Holland, Scott Hult, Adam Fredenhagen, Jonothan Lauf</p>
+                    <p style="text-align: center">Matt Holland, Scott Hult, Adam Fredenhagen, Jonothan Lauf, Scott Blessman</p>
                 </div>
                 <br />
             </div>
@@ -301,8 +298,11 @@
             </div>
             
             <div class="col-md-12" id="rsvpColumn">
-                <div class="well">
-                    <!-- Contact details -->
+                <div class="well placeholder">
+                    <h2>We are not accepting RSVPs yet.</h2>
+                </div>
+
+<!--               <div class="well RSVP">
                     <h3>Please fill out the below form</h3>
                     <p>Please be accurate. You can include an email to receive wedding updates and a confirmation that you have RSVP'd from us if you wish! </p>
                     <p>If you have any questions, let me know <a href="mailto:jtholla2@illinois.edu">jtholla2@illinois.edu</a></p>
@@ -326,7 +326,6 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="numberAttending">Total Number Attending:</label>
-                                    <%--<input class="form-control input-sm" type="number" step="1" id="numberAttending" name="numberAttending">--%>
                                     <select class="form-control" id="numberAttending" name="numberAttending">
                                         <option value="0">0</option>
                                         <option value="1">1</option>
@@ -366,7 +365,6 @@
                             </div>
                         </div>
                         <div class="row">
-                            <%--<div class="col-md-8 error">Please make sure to include your name and the number of people attending.</div>--%>
                             <div class="col-md-12">
                                 <div class="form-group pull-right">
                                     <span id="submitResponse" hidden="hidden">Thank you for your response!</span>
@@ -376,6 +374,7 @@
                         </div>
                     </form>
                 </div>
+-->
             </div>
         </div>
     </div>
@@ -385,7 +384,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p>Copyright &copy; <a href="#">Jacob Holland</a></p>
+                    <p>Copyright &copy; <a target="_blank" href="http://www.jacobholland.net">Jacob Holland</a></p>
                     <div class="border"></div>
                 </div>
             </div>
@@ -395,9 +394,9 @@
 
     <!-- JS -->
     <script src="//www.parsecdn.com/js/parse-1.2.19.min.js"></script>
-    <script src="Scripts/jquery-2.1.1.js"></script>
+    <script src="Scripts/jquery-2.1.1.min.js"></script>
     <script src="Scripts/bootstrap.js"></script>
-    <script src="Scripts/jquery.flexslider.js"></script>
+    <script src="Scripts/jquery.flexslider-min.js"></script>
     <script src="Scripts/jquery.anchor.js"></script>
     <script src="Scripts/bootstrapValidator.min.js"></script>
     <script src="Scripts/blur.min.js"></script>
