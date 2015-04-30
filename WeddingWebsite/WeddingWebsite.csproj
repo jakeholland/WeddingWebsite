@@ -75,6 +75,7 @@
     <Content Include="packages.config" />
     <Content Include="rsvp-process.php" />
     <Content Include="Scripts\jquery-2.1.1.min.map" />
+    <None Include="Properties\PublishProfiles\jakeandtaylor.com - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

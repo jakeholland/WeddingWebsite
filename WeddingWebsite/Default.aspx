@@ -185,8 +185,8 @@
                 </div>
             </div>
         </div>
-        <div class="row equal">
-            <div class="col-sm-4">
+        <div class="row">
+            <div class="col-sm-4 sameHeight">
                 <div class="wedding">
                     <!-- Ceremony -->
                     <h4><i class="fa fa-heart"></i>Ceremony</h4>
@@ -203,7 +203,7 @@
                     <a href="tel:+8159158145">(815) 915-8145</a>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 sameHeight">
                 <div class="wedding">
                     <!-- Wedding details -->
                     <h4><i class="fa fa-glass"></i>Wedding Party</h4>
@@ -219,7 +219,7 @@
                 </div>
                 <br />
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 sameHeight">
                 <div class="wedding">
                     <!-- Travel and Accomodation -->
                     <h4><i class="fa fa-home"></i>Accommodations</h4>
@@ -298,11 +298,7 @@
             </div>
             
             <div class="col-md-12" id="rsvpColumn">
-                <div class="well placeholder">
-                    <h2>We are not accepting RSVPs yet.</h2>
-                </div>
-
-<!--               <div class="well RSVP">
+               <div class="well RSVP">
                     <h3>Please fill out the below form</h3>
                     <p>Please be accurate. You can include an email to receive wedding updates and a confirmation that you have RSVP'd from us if you wish! </p>
                     <p>If you have any questions, let me know <a href="mailto:jtholla2@illinois.edu">jtholla2@illinois.edu</a></p>
@@ -374,7 +370,6 @@
                         </div>
                     </form>
                 </div>
--->
             </div>
         </div>
     </div>

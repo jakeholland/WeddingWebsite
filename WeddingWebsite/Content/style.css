@@ -438,6 +438,12 @@ margin-left:15px;
     table-layout: fixed;
     float:none; 
     }
+    .sameHeight{
+   height: 486px;
+   }
+   .wedding{
+   height: 486px;
+   }   
 }
 .error{
   color: #D53535;
