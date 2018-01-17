@@ -1,4 +1,3 @@
-Parse.initialize("OC2yZnNrNbBtInQvOyf8dskWuoUliy0SHfjkWBop", "lrSV9WVgeaLbi9yVgm52IU4y8GOo0k3MDhHTJZ9j");
 var url = "https://api.mailgun.net/v2/jakeandtaylor.com/lists/wedding@jakeandtaylor.com/members";
 var APIKey = "key-6690ae2049949a9b02539f5ab8e96a2a";
 
@@ -25,22 +24,21 @@ function addToMailingList(email, name) {
 }
 
 function rsvpEmail(formObj) {
-    Parse.Cloud.run('rsvpEmail', formObj, {
-        success: function (result) {
-            //console.log(result);
-
-            //addToMailingList(formObj.email, formObj.name);
-
-        },
-        error: function (error) {
-            console.log(error);
-        }
-    });
+    // Parse.Cloud.run('rsvpEmail', formObj, {
+    //     success: function (result) {
+    //         //console.log(result);
+    //
+    //         //addToMailingList(formObj.email, formObj.name);
+    //
+    //     },
+    //     error: function (error) {
+    //         console.log(error);
+    //     }
+    // });
 };
 
 
 $(document).ready(function () {
-    //Parse.Analytics.track('visited', "111.111.111.111");
 
     $('.flexslider').flexslider({
         animation: "slide",
@@ -86,8 +84,8 @@ $(document).ready(function () {
         // Prevent form submission
         e.preventDefault();
 
-        var GuestList = Parse.Object.extend("GuestList");
-        var rsvpObject = new GuestList();
+        // var GuestList = Parse.Object.extend("GuestList");
+        // var rsvpObject = new GuestList();
         var formObj = {
             name: $('#name').val(),
             guestNames: $('#guestNames').val(),
@@ -99,7 +97,7 @@ $(document).ready(function () {
         rsvpObject.save(formObj).then(function (object) {
             $('#rsvpColumn:input').attr("disabled", true);
             var user = { name: $('#name').val() }
-            Parse.Analytics.track('submittedRSVP', user);
+            // Parse.Analytics.track('submittedRSVP', user);
             if ($('#email').val().length > 0) {
                 rsvpEmail(formObj);
             }
@@ -110,8 +108,7 @@ $(document).ready(function () {
     //Enable email validation if the user decides to put one in.
     .on('keyup', '[name="email"]', function () {
         var isEmpty = $(this).val() == '';
-        $('#rsvpForm')
-            .bootstrapValidator('enableFieldValidators', 'email', !isEmpty);
+        $('#rsvpForm').bootstrapValidator('enableFieldValidators', 'email', !isEmpty);
 
         if ($(this).val().length == 1) {
             $('#rsvpForm').bootstrapValidator('validateField', 'email');

@@ -1,6 +1,0 @@
-C:\Users\Jake\Documents\GitHub\WeddingWebsite\WeddingWebsite\bin\WeddingWebsite.dll.config
-C:\Users\Jake\Documents\GitHub\WeddingWebsite\WeddingWebsite\bin\WeddingWebsite.dll
-C:\Users\Jake\Documents\GitHub\WeddingWebsite\WeddingWebsite\bin\WeddingWebsite.pdb
-C:\Users\Jake\Documents\GitHub\WeddingWebsite\WeddingWebsite\obj\Debug\WeddingWebsite.csprojResolveAssemblyReference.cache
-C:\Users\Jake\Documents\GitHub\WeddingWebsite\WeddingWebsite\obj\Debug\WeddingWebsite.dll
-C:\Users\Jake\Documents\GitHub\WeddingWebsite\WeddingWebsite\obj\Debug\WeddingWebsite.pdb
